@@ -29,8 +29,9 @@ export class ListePage {
     console.log('Hello ListePage Page');
   }
 
-  onGoAdditive(event){
+  onGoAdditive(event,additive){
     console.log(event)
+    console.log(additive.id)
   }
 
   loadData(){

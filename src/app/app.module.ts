@@ -6,6 +6,8 @@ import { SearchPage } from '../pages/search/search';
 import { ListePage } from '../pages/liste/liste';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { Additive } from '../providers/additive/additive';
+
 const pages:Array<any> = [
   SearchPage,
   ListePage,
@@ -16,7 +18,9 @@ const ionicAppConfig:Object = {
   tabsPlacement: 'bottom',
   mode: 'md'
 };
-const providers:Array<any> = [];
+const providers:Array<any> = [
+  Additive
+];
 
 @NgModule({
   declarations: [MyApp, ...pages, ...components],

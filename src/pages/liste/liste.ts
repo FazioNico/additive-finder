@@ -19,4 +19,7 @@ export class ListePage {
     console.log('Hello ListePage Page');
   }
 
+  onGoAdditive(event){
+    console.log(event)
+  }
 }

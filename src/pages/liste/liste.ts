@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import 'rxjs/add/operator/take';
+
+import { Additive } from "../../providers/additive/additive";
 
 /*
   Generated class for the ListePage page.
@@ -13,7 +16,14 @@ import { NavController } from 'ionic-angular';
 })
 export class ListePage {
 
-  constructor(public navCtrl: NavController) {}
+  additiveListe:Array<any> = [];
+
+  constructor(
+    public navCtrl: NavController,
+    private _addService: Additive
+  ) {
+    this.loadData();
+  }
 
   ionViewDidLoad() {
     console.log('Hello ListePage Page');
@@ -22,4 +32,12 @@ export class ListePage {
   onGoAdditive(event){
     console.log(event)
   }
+
+  loadData(){
+    this._addService.load()
+      .subscribe((data)=>{
+        return this.additiveListe = [...this.additiveListe, data]
+      })
+  }
+
 }

@@ -17,6 +17,7 @@ import { Additive } from "../../providers/additive/additive";
 export class ListePage {
 
   additiveListe:Array<any> = [];
+  max:number = 20;
 
   constructor(
     public navCtrl: NavController,
@@ -30,8 +31,11 @@ export class ListePage {
   }
 
   onGoAdditive(event,additive){
-    console.log(event)
-    console.log(additive.id)
+    console.log(additive)
+  }
+
+  onMore(){
+    this.max = this.max + (50)
   }
 
   loadData(){
@@ -40,5 +44,6 @@ export class ListePage {
         return this.additiveListe = [...this.additiveListe, data]
       })
   }
+
 
 }

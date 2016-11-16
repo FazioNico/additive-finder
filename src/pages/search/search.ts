@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Validators, FormBuilder } from '@angular/forms';
+import { Observable }   from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
 
 import { Additive } from "../../providers/additive/additive";
 
@@ -18,6 +21,7 @@ import { Additive } from "../../providers/additive/additive";
 export class SearchPage {
 
   eNumberForm:any;
+  result:any;
 
   constructor(
     public navCtrl: NavController,
@@ -36,17 +40,26 @@ export class SearchPage {
   ionViewLoaded() {
   }
 
-  searchNumber(){
+  searchNumber():void{
     if(this.eNumberForm.value.eNumber){
-      this._addService.load()
-        .filter((data)=>{
-          if(data.id === this.eNumberForm.value.eNumber){
-            return true;
-          }
-        })
-        .subscribe((data)=>{
-          console.log(data)
-        })
+      this._subscribe()
+      console.log(this.result)
     }
+    this.eNumberForm.reset();
+  }
+
+  private _subscribe(){
+    return this._addService.load()
+      .filter((data)=>{
+        if(data.id === this.eNumberForm.value.eNumber){
+          return true;
+        }
+        else {
+          return false
+        }
+      })
+      .subscribe((data)=>{
+        this.result =  Observable.of(data);
+      })
   }
 }

@@ -6,23 +6,25 @@ import { SearchPage } from '../pages/search/search';
 import { ListePage } from '../pages/liste/liste';
 import { TabsPage } from '../pages/tabs/tabs';
 
+const pages:Array<any> = [
+  SearchPage,
+  ListePage,
+  TabsPage
+];
+const components:Array<any> = [];
+const ionicAppConfig:Object = {
+  tabsPlacement: 'bottom',
+  mode: 'md'
+};
+const providers:Array<any> = [];
+
 @NgModule({
-  declarations: [
-    MyApp,
-    SearchPage,
-    ListePage,
-    TabsPage
-  ],
+  declarations: [MyApp, ...pages, ...components],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, ionicAppConfig)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    SearchPage,
-    ListePage,
-    TabsPage
-  ],
-  providers: []
+  entryComponents: [MyApp, ...pages],
+  providers: [...providers]
 })
 export class AppModule {}

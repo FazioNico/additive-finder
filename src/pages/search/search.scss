@@ -1,3 +1,16 @@
-page-search-page {
-
+page-search {
+  .displayTable {
+    display:table;
+    width: 100%;
+    height: 100%;
+  }
+  .cellTable {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  ion-item {
+    max-width: 160px;
+    margin: auto !important;
+    font-size: 4rem !important;
+  }
 }

@@ -14,5 +14,18 @@
 
 
 <ion-content padding>
-
+  <div class="displayTable">
+    <div class="cellTable">
+      <form [formGroup]="eNumberForm">
+        <ion-item>
+          <ion-label>E</ion-label>
+          <ion-input type="number" step="1" min="0" formControlName="eNumber" placeholder="100" required></ion-input>
+        </ion-item>
+      </form>
+      <div text-center>
+        <br/>
+        <button ion-button outline round icon-left (click)="searchNumber()" [disabled]="!eNumberForm.valid" color="primary"><ion-icon name="search"></ion-icon> Chercher </button>
+      </div>
+    </div>
+  </div>
 </ion-content>

@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Validators, FormBuilder } from '@angular/forms';
+import 'rxjs/add/operator/filter';
+
+import { Additive } from "../../providers/additive/additive";
+
 /*
   Generated class for the SearchPage page.
 
@@ -17,9 +21,10 @@ export class SearchPage {
 
   constructor(
     public navCtrl: NavController,
-    private formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+    private _addService: Additive
   ) {
-    this.eNumberForm = this.formBuilder.group({
+    this.eNumberForm = this._formBuilder.group({
       eNumber: ['', Validators.required]
     });
   }
@@ -33,7 +38,15 @@ export class SearchPage {
 
   searchNumber(){
     if(this.eNumberForm.value.eNumber){
-      console.log(this.eNumberForm.value.eNumber)
+      this._addService.load()
+        .filter((data)=>{
+          if(data.id === this.eNumberForm.value.eNumber){
+            return true;
+          }
+        })
+        .subscribe((data)=>{
+          console.log(data)
+        })
     }
   }
 }

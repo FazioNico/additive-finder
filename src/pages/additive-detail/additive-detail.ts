@@ -29,14 +29,14 @@ export class AdditiveDetailPage {
         this.item = this.navParams.get('additive')
         this._wiki.load(`e${this.item.id}`)
           .subscribe((data)=>{
-            console.log('ok->', data)
             this.wikiData = data
             this._hideLoading()
-            console.log('find->', this.wikiData)
+            //console.log('find->', this.wikiData)
           },
           (err) => {
             this._hideLoading()
-            console.log(err);
+            //console.log(err);
+            this.wikiData = {'extract': 'Pas de détails supplémentaires.'}
           })
     }
   }

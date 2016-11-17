@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Validators, FormBuilder } from '@angular/forms';
-import { Observable }   from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/map';
 
 import { AdditiveDetailPage } from "../additive-detail/additive-detail";
 import { Additive } from "../../providers/additive/additive";

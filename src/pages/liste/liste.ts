@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import 'rxjs/add/operator/take';
 
+import { AdditiveDetailPage } from "../additive-detail/additive-detail";
 import { Additive } from "../../providers/additive/additive";
 
 /*
@@ -32,6 +33,9 @@ export class ListePage {
 
   onGoAdditive(event,additive){
     console.log(additive)
+    this.navCtrl.push(AdditiveDetailPage,{
+      additive: additive
+    })
   }
 
   onMore(){

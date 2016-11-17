@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /*
   Generated class for the AdditiveDetail page.
@@ -13,7 +13,17 @@ import { NavController } from 'ionic-angular';
 })
 export class AdditiveDetailPage {
 
-  constructor(public navCtrl: NavController) {}
+  item:any;
+
+  constructor(
+    public navCtrl: NavController,
+    private navParams: NavParams
+  ) {
+    if(this.navParams.get('additive')){
+        this.item = this.navParams.get('additive')
+        console.log(this.item)
+    }
+  }
 
   ionViewDidLoad() {
     console.log('Hello AdditiveDetailPage Page');

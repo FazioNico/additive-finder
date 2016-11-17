@@ -6,6 +6,7 @@ import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 
+import { AdditiveDetailPage } from "../additive-detail/additive-detail";
 import { Additive } from "../../providers/additive/additive";
 
 /*
@@ -49,6 +50,9 @@ export class SearchPage {
       this.data.forEach((additif)=>{
         if(additif.id === this.eNumberForm.value.eNumber){
           this.result = additif;
+          this.navCtrl.push(AdditiveDetailPage,{
+            additive: additif
+          })
         }
       })
     }

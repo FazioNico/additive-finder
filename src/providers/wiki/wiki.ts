@@ -15,4 +15,9 @@ export class Wiki {
     console.log('Hello Wiki Provider');
   }
 
+  load(query:string){
+    return this.http.get('https://fr.wikipedia.org/api/rest_v1/page/summary/'+ query)
+      .map(res =>res.json())
+  }
+
 }

@@ -15,6 +15,7 @@ import { Wiki } from "../../providers/wiki/wiki";
 export class AdditiveDetailPage {
 
   item:any;
+  wikiData:any;
 
   constructor(
     public navCtrl: NavController,
@@ -23,7 +24,11 @@ export class AdditiveDetailPage {
   ) {
     if(this.navParams.get('additive')){
         this.item = this.navParams.get('additive')
-        console.log(this.item)
+        this._wiki.load(`e${this.item.id}`)
+          .subscribe((data)=>{
+            this.wikiData = data
+            console.log('find->', this.wikiData)
+          })
     }
   }
 

@@ -7,14 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>E{{item.id}}</ion-title>
+    <ion-title>Détail</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <h1>E{{item.id}}</h1>
   {{item.name}} -
-  {{item.type}} - 
+  {{item.type}} -
   {{item.level}}
+  <br>
+  {{wikiData?.extract}}
 </ion-content>

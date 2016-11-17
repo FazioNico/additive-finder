@@ -20,6 +20,7 @@ import { Additive } from "../../providers/additive/additive";
 })
 export class SearchPage {
 
+  data:Array<any> = [];
   eNumberForm:any;
   result:any;
 
@@ -42,24 +43,22 @@ export class SearchPage {
 
   searchNumber():void{
     if(this.eNumberForm.value.eNumber){
-      this._subscribe()
-      console.log(this.result)
+      if(this.data.length === 0){
+        this._subscribe()
+      }
+      this.data.forEach((additif)=>{
+        if(additif.id === this.eNumberForm.value.eNumber){
+          this.result = additif;
+        }
+      })
     }
     this.eNumberForm.reset();
   }
 
   private _subscribe(){
     return this._addService.load()
-      .filter((data)=>{
-        if(data.id === this.eNumberForm.value.eNumber){
-          return true;
-        }
-        else {
-          return false
-        }
-      })
       .subscribe((data)=>{
-        this.result =  Observable.of(data);
+        this.data =  [...this.data,data];
       })
   }
 }

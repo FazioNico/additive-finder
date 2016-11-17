@@ -8,6 +8,7 @@ import { AdditiveDetailPage } from "../pages/additive-detail/additive-detail";
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { Additive } from '../providers/additive/additive';
+import { Wiki } from '../providers/wiki/wiki';
 
 const pages:Array<any> = [
   SearchPage,
@@ -21,7 +22,8 @@ const ionicAppConfig:Object = {
   mode: 'md'
 };
 const providers:Array<any> = [
-  Additive
+  Additive,
+  Wiki
 ];
 
 @NgModule({

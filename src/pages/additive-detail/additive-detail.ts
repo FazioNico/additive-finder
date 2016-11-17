@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { Wiki } from "../../providers/wiki/wiki";
 /*
   Generated class for the AdditiveDetail page.
 
@@ -17,7 +18,8 @@ export class AdditiveDetailPage {
 
   constructor(
     public navCtrl: NavController,
-    private navParams: NavParams
+    private navParams: NavParams,
+    private _wiki: Wiki
   ) {
     if(this.navParams.get('additive')){
         this.item = this.navParams.get('additive')

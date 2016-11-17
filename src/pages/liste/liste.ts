@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 
 import { AdditiveDetailPage } from "../additive-detail/additive-detail";
 import { Additive } from "../../providers/additive/additive";
@@ -18,11 +18,14 @@ export class ListePage {
 
   additiveListe:Array<any> = [];
   max:number = 20;
+  loading:any;
 
   constructor(
     public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
     private _addService: Additive
   ) {
+    this._presentLoading()
     this.loadData();
   }
 
@@ -44,9 +47,20 @@ export class ListePage {
   loadData(){
     this._addService.load()
       .subscribe((data)=>{
+        this._hideLoading()
         return this.additiveListe = [...this.additiveListe, data]
       })
   }
 
+  private _presentLoading() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+    this.loading.present();
+  }
+
+  private _hideLoading():void{
+    this.loading.dismiss();
+  }
 
 }

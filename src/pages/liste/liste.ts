@@ -56,7 +56,7 @@ export class ListePage {
     let classColor:string;
     switch (dataColor) {
       case '0':
-        classColor = 'green';
+        classColor = '#4caf50';
         break;
       case '1':
         classColor = 'green';
@@ -65,7 +65,7 @@ export class ListePage {
         classColor = 'orange';
         break;
       case '3':
-        classColor = 'red';
+        classColor = '#f44336';
         break;
       default:'0'
     }

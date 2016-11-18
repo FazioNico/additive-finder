@@ -1,3 +1,15 @@
-page-liste-page {
-
+page-liste {
+  .item-md {
+    padding-left:0px;
+  }
+  .item-md [item-left]{
+    padding: 28px 16px;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+    min-width: 82px;
+  }
+  .item-inner {
+      padding-left: 9px;
+  }
 }

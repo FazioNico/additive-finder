@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Liste des Additifs</ion-title>
   </ion-navbar>
 
@@ -18,8 +18,8 @@
   <ion-list>
 
     <ion-item *ngFor="let additive of (additiveListe ? additiveListe.slice(0,max): [])" (click)="onGoAdditive($event,additive)">
-      <div item-left [style.color]="getLevelColor(additive.level)">
-        {{ additive.id }}
+      <div item-left [style.background]="getLevelColor(additive.level)">
+        E{{ additive.id }}
       </div>
       <h2 *ngIf="additive.name">{{ additive.name }}</h2>
       <p *ngIf="additive.type">{{ additive.type }}</p>

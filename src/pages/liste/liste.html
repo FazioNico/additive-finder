@@ -28,9 +28,8 @@
 
   </ion-list>
 
-  <div text-center>
-    <button ion-button outline round small (click)="onMore()" [disabled]="max >= (additiveListe ? additiveListe.length : 0)" color="primary"> more </button>
+  <div text-center class="more" *ngIf="additiveListe ? max <= additiveListe.length: max <= 0">
+    <button ion-button outline round small (click)="onMore()" [disabled]="max >= (additiveListe ? additiveListe.length : 0)" color="light"> more </button>
   </div>
-  <br>
 
 </ion-content>

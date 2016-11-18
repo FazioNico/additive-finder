@@ -1,6 +1,12 @@
 page-liste {
+  .list-md {
+    margin: 0px;
+  }
   .item-md {
     padding-left:0px;
+  }
+  .item-md p {
+    color: #bdbdbd;
   }
   .item-md [item-left]{
     padding: 28px 16px;
@@ -11,5 +17,9 @@ page-liste {
   }
   .item-inner {
       padding-left: 9px;
+  }
+  .more {
+    background: #4f4f4f;
+    padding:5px;
   }
 }

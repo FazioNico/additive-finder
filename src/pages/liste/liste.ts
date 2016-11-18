@@ -52,6 +52,26 @@ export class ListePage {
       })
   }
 
+  getLevelColor(dataColor){
+    let classColor:string;
+    switch (dataColor) {
+      case '0':
+        classColor = 'green';
+        break;
+      case '1':
+        classColor = 'green';
+        break;
+      case '2':
+        classColor = 'orange';
+        break;
+      case '3':
+        classColor = 'red';
+        break;
+      default:'0'
+    }
+    return classColor;
+  }
+
   private _presentLoading() {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...'

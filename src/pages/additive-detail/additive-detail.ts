@@ -45,6 +45,26 @@ export class AdditiveDetailPage {
     console.log('Hello AdditiveDetailPage Page');
   }
 
+  getLevelColor(dataColor){
+    let classColor:string;
+    switch (dataColor) {
+      case '0':
+        classColor = '#4caf50';
+        break;
+      case '1':
+        classColor = 'green';
+        break;
+      case '2':
+        classColor = 'orange';
+        break;
+      case '3':
+        classColor = '#f44336';
+        break;
+      default:'0'
+    }
+    return classColor;
+  }
+  
   private _presentLoading() {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...'

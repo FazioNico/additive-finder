@@ -13,11 +13,34 @@
 </ion-header>
 
 
-<ion-content padding>
-  <h1>E{{item.id}}</h1>
-  {{item.name}} -
-  {{item.type}} -
-  {{item.level}}
-  <br>
-  {{wikiData?.extract}}
+<ion-content>
+
+  <ion-card >
+    <div class="colorHeader" [style.background]="getLevelColor(item.level)">
+      <h1>E{{item.id}}</h1>
+    </div>
+    <ion-card-content text-center>
+      <ion-card-title>
+        {{item.name}}
+      </ion-card-title>
+      <p>
+        {{item.type}}
+      </p>
+      <p>
+        <span [style.color]="getLevelColor(item.level)">
+          {{item.level}}
+        </span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <p><b>Détails</b></p>
+      <p>
+        {{wikiData?.extract}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

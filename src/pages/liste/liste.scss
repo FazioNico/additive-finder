@@ -1,12 +1,13 @@
 page-liste {
   .list-md {
     margin: 0px;
+    background: #e0e0e0;
   }
   .item-md {
     padding-left:0px;
   }
   .item-md p {
-    color: #bdbdbd;
+    color: $_secondary;
   }
   .item-md [item-left]{
     padding: 28px 16px;
@@ -17,9 +18,10 @@ page-liste {
   }
   .item-inner {
       padding-left: 9px;
+      color:$_primary;
   }
   .more {
-    background: #4f4f4f;
-    padding:5px;
+    background: $_therty;
+    padding:13px;
   }
 }

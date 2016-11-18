@@ -74,6 +74,9 @@ $_primary: #424242;
 $_secondary: #616161;
 $_therty: #4f4f4f;
 
+html {
+    font-size: 66.5%!important;
+}
 body {
   background: $_primary;
 }
@@ -92,4 +95,10 @@ ion-content{
 }
 .list-md > .item-block:last-child, .list-md > .item-wrapper:last-child .item-block {
   border-bottom: 1px solid $_primary!important;
+}
+.item-md [item-left] {
+    border-bottom: 1px solid $_primary!important;
+}
+.card-md {
+  background: #e0e0e0!important;
 }

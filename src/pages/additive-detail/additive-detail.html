@@ -16,7 +16,7 @@
 <ion-content>
 
   <ion-card >
-    <div class="colorHeader" [style.background]="getLevelColor(item.level)">
+    <div class="colorHeader" [style.background]="tools.getColor(item.level)">
       <h1>E{{item.id}}</h1>
     </div>
     <ion-card-content text-center>
@@ -27,7 +27,7 @@
         {{item.type}}
       </p>
       <p>
-        <span [style.color]="getLevelColor(item.level)">
+        <span [style.color]="tools.getColor(item.level)">
           {{item.level}}
         </span>
       </p>

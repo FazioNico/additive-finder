@@ -4,6 +4,7 @@ import { NavController, LoadingController } from 'ionic-angular';
 import { AdditiveDetailPage } from "../additive-detail/additive-detail";
 import { Additive } from "../../providers/additive/additive";
 
+import { LevelTools } from '../../tools/level/level';
 /*
   Generated class for the ListePage page.
 
@@ -19,6 +20,7 @@ export class ListePage {
   additiveListe:Array<any> = [];
   max:number = 20;
   loading:any;
+  tools:any = LevelTools;
 
   constructor(
     public navCtrl: NavController,
@@ -50,26 +52,6 @@ export class ListePage {
         this._hideLoading()
         return this.additiveListe = [...this.additiveListe, data]
       })
-  }
-
-  getLevelColor(dataColor){
-    let classColor:string;
-    switch (dataColor) {
-      case '0':
-        classColor = '#4caf50';
-        break;
-      case '1':
-        classColor = 'green';
-        break;
-      case '2':
-        classColor = 'orange';
-        break;
-      case '3':
-        classColor = '#f44336';
-        break;
-      default:'0'
-    }
-    return classColor;
   }
 
   private _presentLoading() {

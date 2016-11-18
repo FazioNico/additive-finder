@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
 
 import { Wiki } from "../../providers/wiki/wiki";
+
+import { LevelTools } from '../../tools/level/level';
+
 /*
   Generated class for the AdditiveDetail page.
 
@@ -17,6 +20,7 @@ export class AdditiveDetailPage {
   item:any;
   wikiData:any;
   loading:any;
+  tools:any = LevelTools;
 
   constructor(
     public navCtrl: NavController,
@@ -35,6 +39,7 @@ export class AdditiveDetailPage {
           },
           (err) => {
             this._hideLoading()
+
             //console.log(err);
             this.wikiData = {'extract': 'Pas de détails supplémentaires.'}
           })
@@ -45,26 +50,6 @@ export class AdditiveDetailPage {
     console.log('Hello AdditiveDetailPage Page');
   }
 
-  getLevelColor(dataColor){
-    let classColor:string;
-    switch (dataColor) {
-      case '0':
-        classColor = '#4caf50';
-        break;
-      case '1':
-        classColor = 'green';
-        break;
-      case '2':
-        classColor = 'orange';
-        break;
-      case '3':
-        classColor = '#f44336';
-        break;
-      default:'0'
-    }
-    return classColor;
-  }
-  
   private _presentLoading() {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...'

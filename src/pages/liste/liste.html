@@ -18,7 +18,7 @@
   <ion-list>
 
     <ion-item *ngFor="let additive of (additiveListe ? additiveListe.slice(0,max): [])" (click)="onGoAdditive($event,additive)">
-      <div item-left [style.background]="getLevelColor(additive.level)">
+      <div item-left [style.background]="tools.getColor(additive.level)">
         E{{ additive.id }}
       </div>
       <h2 *ngIf="additive.name">{{ additive.name }}</h2>

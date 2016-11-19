@@ -26,22 +26,22 @@ export class LevelTools {
   }
 
   static getTXT(levelColor){
-    let classColor:string;
+    let txt:string;
     switch (levelColor) {
       case '0':
-        classColor = 'Acceptable';
+        txt = 'Acceptable';
         break;
       case '1':
-        classColor = 'rappots contradictoires';
+        txt = 'rappots contradictoires';
         break;
       case '2':
-        classColor = 'à risque';
+        txt = 'à risque';
         break;
       case '3':
-        classColor = 'à éviter';
+        txt = 'à éviter';
         break;
       default:'0'
     }
-    return classColor;
+    return txt.toUpperCase();
   }
 }

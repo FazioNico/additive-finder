@@ -26,11 +26,13 @@
       <p>
         {{item.type}}
       </p>
-      <p>
-        <span [style.color]="tools.getColor(item.level)">
-          {{item.level}}
-        </span>
-      </p>
+      <div id="result">
+        <hr>
+        <h2 [style.color]="tools.getColor(item.level)">
+          {{tools.getTXT(item.level)}}
+        </h2>
+      </div>
+
     </ion-card-content>
   </ion-card>
 

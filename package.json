@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "additive-finder",
+  "author": "Nicolas Fazio",
+  "homepage": "http://nicolasfazio.ch/",
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
@@ -44,5 +44,5 @@
       "locator": "ios"
     }
   ],
-  "description": "AdditiveFinder: An Ionic project"
+  "description": "Additive Finder: Le guide des additifs alimentaires"
 }

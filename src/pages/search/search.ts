@@ -32,7 +32,7 @@ export class SearchPage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello SearchPage Page');
+    //console.log('Hello SearchPage Page');
   }
 
   ionViewLoaded() {

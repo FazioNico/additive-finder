@@ -32,11 +32,11 @@ export class ListePage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello ListePage Page');
+    //console.log('Hello ListePage Page');
   }
 
   onGoAdditive(event,additive){
-    console.log(additive)
+    //console.log(additive)
     this.navCtrl.push(AdditiveDetailPage,{
       additive: additive
     })

@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 export class Wiki {
 
   constructor(public http: Http) {
-    console.log('Hello Wiki Provider');
+    //console.log('Hello Wiki Provider');
   }
 
   load(query:string){

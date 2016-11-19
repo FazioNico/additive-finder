@@ -47,7 +47,7 @@ export class AdditiveDetailPage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello AdditiveDetailPage Page');
+    //console.log('Hello AdditiveDetailPage Page');
   }
 
   private _presentLoading() {

@@ -9,16 +9,16 @@ export class LevelTools {
     let classColor:string;
     switch (levelColor) {
       case '0':
-        classColor = '#4caf50';
+        classColor = '#4caf50'; // green lighten
         break;
       case '1':
-        classColor = 'green';
+        classColor = '#ffa726'; // orange lighten
         break;
       case '2':
-        classColor = 'orange';
+        classColor = '#ff7043'; // deep orange lighten
         break;
       case '3':
-        classColor = '#f44336';
+        classColor = '#f44336'; // red lighten
         break;
       default:'0'
     }
@@ -29,16 +29,16 @@ export class LevelTools {
     let classColor:string;
     switch (levelColor) {
       case '0':
-        classColor = 'Pas de danger';
+        classColor = 'Acceptable';
         break;
       case '1':
-        classColor = 'green';
+        classColor = 'rappots contradictoires';
         break;
       case '2':
-        classColor = 'orange';
+        classColor = 'à risque';
         break;
       case '3':
-        classColor = 'à évité';
+        classColor = 'à éviter';
         break;
       default:'0'
     }

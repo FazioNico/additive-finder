@@ -73,6 +73,7 @@ $ionicons-font-path: "../assets/fonts";
 $_primary: #424242;
 $_secondary: #616161;
 $_therty: #4f4f4f;
+$_forthy: #c7c7c7;
 
 html {
     font-size: 66.5%!important;
@@ -88,7 +89,7 @@ ion-content{
   color:#fff!important;
 }
 .list-md .item-block .item-inner {
-  border-bottom: 1px solid $_primary!important;
+  border-bottom: 1px solid $_forthy!important;
 }
 .list-md > .item-block:first-child, .list-md > .item-wrapper:first-child .item-block{
   border-top: 1px solid $_primary!important;
@@ -97,7 +98,7 @@ ion-content{
   border-bottom: 1px solid $_primary!important;
 }
 .item-md [item-left] {
-    border-bottom: 1px solid $_primary!important;
+    //border-bottom: 1px solid $_forthy!important;
 }
 .card-md {
   background: #e0e0e0!important;

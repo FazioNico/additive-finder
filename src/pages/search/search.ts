@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { Validators, FormBuilder } from '@angular/forms';
 
 import { AdditiveDetailPage } from "../additive-detail/additive-detail";
@@ -23,6 +23,7 @@ export class SearchPage {
 
   constructor(
     public navCtrl: NavController,
+    public alertCtrl: AlertController,
     private _formBuilder: FormBuilder,
     private _addService: Additive
   ) {
@@ -43,14 +44,17 @@ export class SearchPage {
       if(this.data.length === 0){
         this._subscribe()
       }
-      this.data.forEach((additif)=>{
-        if(additif.id === this.eNumberForm.value.eNumber){
-          this.result = additif;
-          this.navCtrl.push(AdditiveDetailPage,{
-            additive: additif
-          })
-        }
+      let result = this.data.find((additif)=>{
+        return additif.id === this.eNumberForm.value.eNumber;
       })
+      if(result){
+        this.navCtrl.push(AdditiveDetailPage,{
+          additive: result
+        })
+      }
+      else {
+        this.showAlert()
+      }
     }
     this.eNumberForm.reset();
   }
@@ -60,5 +64,15 @@ export class SearchPage {
       .subscribe((data)=>{
         this.data =  [...this.data,data];
       })
+  }
+  private showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Inconnu',
+      subTitle: `
+        Cet additif n'est pas ensore répértorié dans la base de donnée.
+      `,
+      buttons: ['OK']
+    });
+    alert.present();
   }
 }

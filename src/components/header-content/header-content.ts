@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 
+import { InfoPage } from "../../pages/info/info";
 /*
   Generated class for the HeaderContent component.
 
@@ -22,7 +23,7 @@ export class HeaderContentComponent {
 
   openModal():void {
     console.log('-> load modal page')
-    // let modal = this.modalCtrl.create(ModalPage);
-    // modal.present();
+    let modal = this.modalCtrl.create(InfoPage);
+    modal.present();
   }
 }

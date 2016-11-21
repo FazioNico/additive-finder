@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 import { SearchPage } from '../pages/search/search';
 import { ListePage } from '../pages/liste/liste';
 import { AdditiveDetailPage } from "../pages/additive-detail/additive-detail";
+import { InfoPage } from "../pages/info/info";
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { HeaderContentComponent } from '../components/header-content/header-content';
@@ -16,6 +17,7 @@ const pages:Array<any> = [
   SearchPage,
   ListePage,
   AdditiveDetailPage,
+  InfoPage,
   TabsPage
 ];
 const components:Array<any> = [

@@ -44,7 +44,7 @@ export class SearchPage {
       if(this.data.length === 0){
         this._subscribe()
       }
-      let result = this.data.find((additif)=>{
+      let result:Object = this.data.find((additif)=>{
         return additif.id === this.eNumberForm.value.eNumber;
       })
       if(result){

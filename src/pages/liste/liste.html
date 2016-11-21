@@ -12,14 +12,14 @@
 
   <ion-list>
 
-    <ion-item *ngFor="let additive of (additiveListe ? additiveListe.slice(0,max): [])" (click)="onGoAdditive($event,additive)">
+    <button ion-item *ngFor="let additive of (additiveListe ? additiveListe.slice(0,max): [])" (click)="onGoAdditive($event,additive)">
       <div item-left [style.background]="tools.getColor(additive.level)">
         E{{ additive.id }}
       </div>
       <h2 *ngIf="additive.name">{{ additive.name }}</h2>
       <p *ngIf="additive.type">{{ additive.type }}</p>
       <ion-icon color="primary" name="arrow-dropright-circle" clear item-right></ion-icon>
-    </ion-item>
+    </button>
 
   </ion-list>
 

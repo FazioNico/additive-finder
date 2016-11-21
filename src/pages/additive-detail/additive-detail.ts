@@ -52,7 +52,7 @@ export class AdditiveDetailPage {
 
   private _presentLoading() {
     this.loading = this.loadingCtrl.create({
-      content: 'Please wait...'
+      content: 'Chargement...'
     });
     this.loading.present();
   }

@@ -7,6 +7,8 @@ import { ListePage } from '../pages/liste/liste';
 import { AdditiveDetailPage } from "../pages/additive-detail/additive-detail";
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { HeaderContentComponent } from '../components/header-content/header-content';
+
 import { Additive } from '../providers/additive/additive';
 import { Wiki } from '../providers/wiki/wiki';
 
@@ -16,7 +18,9 @@ const pages:Array<any> = [
   AdditiveDetailPage,
   TabsPage
 ];
-const components:Array<any> = [];
+const components:Array<any> = [
+  HeaderContentComponent
+];
 const ionicAppConfig:Object = {
   tabsPlacement: 'bottom',
   mode: 'md'

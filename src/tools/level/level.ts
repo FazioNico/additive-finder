@@ -32,7 +32,7 @@ export class LevelTools {
         txt = 'Acceptable';
         break;
       case '1':
-        txt = 'rappots contradictoires';
+        txt = 'rapports contradictoires';
         break;
       case '2':
         txt = 'à risque';

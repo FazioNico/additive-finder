@@ -65,7 +65,7 @@ export class SearchPage {
         this.data =  [...this.data,data];
       })
   }
-  private showAlert() {
+  private showAlert():void {
     let alert = this.alertCtrl.create({
       title: 'Inconnu',
       subTitle: `

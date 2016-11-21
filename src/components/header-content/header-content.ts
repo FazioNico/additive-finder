@@ -20,7 +20,7 @@ export class HeaderContentComponent {
   ) {
   }
 
-  presentModal() {
+  openModal():void {
     console.log('-> load modal page')
     // let modal = this.modalCtrl.create(ModalPage);
     // modal.present();

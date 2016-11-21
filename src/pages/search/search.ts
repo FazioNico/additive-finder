@@ -53,7 +53,7 @@ export class SearchPage {
         })
       }
       else {
-        this.showAlert()
+        this._showAlert()
       }
     }
     this.eNumberForm.reset();
@@ -65,7 +65,7 @@ export class SearchPage {
         this.data =  [...this.data,data];
       })
   }
-  private showAlert():void {
+  private _showAlert():void {
     let alert = this.alertCtrl.create({
       title: 'Inconnu',
       subTitle: `

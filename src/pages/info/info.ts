@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ViewController } from 'ionic-angular';
 
+import { LevelTools } from '../../tools/level/level';
 /*
   Generated class for the Info page.
 
@@ -13,7 +14,8 @@ import { NavController, ViewController } from 'ionic-angular';
 })
 export class InfoPage {
 
-  title:string = 'Infos'
+  title:string = 'Informations';
+  tools:any = LevelTools;
 
   constructor(
     public navCtrl: NavController,
@@ -21,7 +23,7 @@ export class InfoPage {
   ) {}
 
   ionViewDidLoad() {
-    console.log('Hello InfoPage Page');
+    //console.log('Hello InfoPage Page');
   }
 
   dismiss():void{

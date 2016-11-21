@@ -7,8 +7,8 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Info</ion-title>
-    <ion-buttons start>
+    <ion-title>Informations</ion-title>
+    <ion-buttons end>
       <button ion-button (click)="dismiss()">
         <ion-icon name="md-close"></ion-icon>
       </button>
@@ -17,6 +17,39 @@
 
 </ion-header>
 
-<ion-content padding>
-  text: {{ title }}
+<ion-content>
+
+    <ion-card>
+      <ion-card-header>
+        Légende
+      </ion-card-header>
+      <ion-card-content>
+        <ion-row>
+          <ion-col width-20 [style.background]="tools.getColor('0')"></ion-col>
+          <ion-col width-80>Cet additif n'est pas toxique pour l'organisme</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-20 [style.background]="tools.getColor('1')"></ion-col>
+          <ion-col width-80>Certain rapports definissent cet additif comme toxique</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-20 [style.background]="tools.getColor('2')"></ion-col>
+          <ion-col width-80>Cet additif peut être toxique pour l'organisme</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-20 [style.background]="tools.getColor('3')"></ion-col>
+          <ion-col width-80>Cet additif est toxique pour l'organisme</ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Sources
+      </ion-card-header>
+      <ion-card-content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit error iusto minima ducimus magnam, impedit maxime iste iure soluta, at quae! Ipsam sit quisquam laborum earum beatae, nihil quaerat!</p>
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>

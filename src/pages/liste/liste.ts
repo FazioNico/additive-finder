@@ -31,22 +31,22 @@ export class ListePage {
     this.loadData();
   }
 
-  ionViewDidLoad() {
+  ionViewDidLoad(){
     //console.log('Hello ListePage Page');
   }
 
-  onGoAdditive(event,additive){
+  onGoAdditive(event,additive):void{
     //console.log(additive)
     this.navCtrl.push(AdditiveDetailPage,{
       additive: additive
     })
   }
 
-  onMore(){
+  onMore():void{
     this.max = this.max + (50)
   }
 
-  loadData(){
+  loadData():void{
     this._addService.load()
       .subscribe((data)=>{
         this._hideLoading()
@@ -54,7 +54,7 @@ export class ListePage {
       })
   }
 
-  private _presentLoading() {
+  private _presentLoading():void {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...'
     });

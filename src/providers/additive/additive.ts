@@ -16,17 +16,14 @@ import { AdditiveData } from "./additive-data";
 @Injectable()
 export class Additive {
 
-  data:Array<any>;
 
   constructor(public http: Http) {
-    console.log('Hello Additive Provider');
-    this.data = null;
   }
 
   load():Observable<any>{
     return Observable.from(AdditiveData)
     .map((data)=>{
-      return this.data = data
+        return data;
     })
   }
 }

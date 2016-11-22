@@ -1,0 +1,3 @@
+
+# Additive Finder
+A Ionic 2 application in process...

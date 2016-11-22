@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable }   from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 
@@ -16,8 +14,7 @@ import { AdditiveData } from "./additive-data";
 @Injectable()
 export class Additive {
 
-
-  constructor(public http: Http) {
+  constructor() {
   }
 
   load():Observable<any>{

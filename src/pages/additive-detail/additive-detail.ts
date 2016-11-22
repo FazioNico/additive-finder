@@ -31,26 +31,31 @@ export class AdditiveDetailPage {
     if(this.navParams.get('additive')){
         this._presentLoading()
         this.item = this.navParams.get('additive')
-        this._wiki.load(`e${this.item.id}`)
-          .subscribe((data)=>{
-            this.wikiData = data
-            this._hideLoading()
-            //console.log('find->', this.wikiData)
-          },
-          (err) => {
-            this._hideLoading()
-
-            //console.log(err);
-            this.wikiData = {'extract': 'Pas de détails supplémentaires.'}
-          })
+        this.loadData()
     }
   }
 
+  /* Events Methodes */
   ionViewDidLoad() {
     //console.log('Hello AdditiveDetailPage Page');
   }
 
-  private _presentLoading() {
+  /* Core Methodes */
+  loadData():void{
+    this._wiki.load(`e${this.item.id}`)
+      .subscribe((data)=>{
+        this.wikiData = data
+        this._hideLoading()
+        //console.log('find->', this.wikiData)
+      },
+      (err) => {
+        this._hideLoading()
+        //console.log(err);
+        this.wikiData = {'extract': 'Pas de détails supplémentaires.'}
+      })
+  }
+
+  private _presentLoading():void {
     this.loading = this.loadingCtrl.create({
       content: 'Chargement...'
     });

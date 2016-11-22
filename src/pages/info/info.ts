@@ -22,6 +22,7 @@ export class InfoPage {
     public viewCtrl: ViewController
   ) {}
 
+  /* Events Methode */
   ionViewDidLoad() {
     //console.log('Hello InfoPage Page');
   }

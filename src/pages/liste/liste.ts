@@ -31,11 +31,12 @@ export class ListePage {
     this.loadData();
   }
 
+  /* Events Methode */
   ionViewDidLoad(){
     //console.log('Hello ListePage Page');
   }
 
-  onGoAdditive(event,additive):void{
+  onGoAdditive(event:Event,additive:Object):void{
     //console.log(additive)
     this.navCtrl.push(AdditiveDetailPage,{
       additive: additive
@@ -43,9 +44,11 @@ export class ListePage {
   }
 
   onMore():void{
-    this.max = this.max + (50)
+    const nbr:number = 50
+    this.max = this.max + (nbr)
   }
 
+  /* Core Methode */
   loadData():void{
     this._addService.load()
       .subscribe((data)=>{

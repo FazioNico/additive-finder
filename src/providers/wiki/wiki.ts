@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Observable }   from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 /*
@@ -15,7 +16,7 @@ export class Wiki {
     //console.log('Hello Wiki Provider');
   }
 
-  load(query:string){
+  load(query:string):Observable<any>{
     return this.http.get('https://fr.wikipedia.org/api/rest_v1/page/summary/'+ query)
       .map(res =>res.json())
   }

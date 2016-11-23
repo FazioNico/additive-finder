@@ -22,7 +22,6 @@ export class HeaderContentComponent {
   }
 
   openModal():void {
-    console.log('-> load modal page')
     let modal = this.modalCtrl.create(InfoPage);
     modal.present();
   }

@@ -39,24 +39,27 @@ export class SearchPage {
   ionViewLoaded() {
   }
 
-  searchNumber():void{
-    if(this.eNumberForm.value.eNumber){
-      if(this.data.length === 0){
-        this._subscribe()
-      }
-      let result:Object = this.data.find((additif)=>{
-        return additif.id === this.eNumberForm.value.eNumber;
-      })
-      if(result){
-        this.navCtrl.push(AdditiveDetailPage,{
-          additive: result
+  searchNumber(event):void{
+    if(event.which === 13 || event.which === 1){
+      //console.log(this.eNumberForm.value.eNumber);
+      if(this.eNumberForm.value.eNumber){
+        if(this.data.length === 0){
+          this._subscribe()
+        }
+        let result:Object = this.data.find((additif)=>{
+          return additif.id === this.eNumberForm.value.eNumber;
         })
+        if(result){
+          this.navCtrl.push(AdditiveDetailPage,{
+            additive: result
+          })
+        }
+        else {
+          this._showAlert()
+        }
       }
-      else {
-        this._showAlert()
-      }
+      this.eNumberForm.reset();
     }
-    this.eNumberForm.reset();
   }
 
   private _subscribe(){

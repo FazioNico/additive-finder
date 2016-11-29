@@ -14,12 +14,12 @@
       <form [formGroup]="eNumberForm">
         <ion-item>
           <ion-label>E</ion-label>
-          <ion-input type="text" step="1" min="0" formControlName="eNumber" placeholder="100" required></ion-input>
+          <ion-input type="text" step="1" min="0" formControlName="eNumber" placeholder="100" required (search)="searchNumber($event)" (keyup)="searchNumber($event)"></ion-input>
         </ion-item>
       </form>
       <div text-center>
         <br/>
-        <button ion-button outline round icon-left (click)="searchNumber()" [disabled]="!eNumberForm.valid" color="light"><ion-icon name="search"></ion-icon> Chercher </button>
+        <button ion-button outline round icon-left (click)="searchNumber($event)" [disabled]="!eNumberForm.valid" color="light"><ion-icon name="search"></ion-icon> Chercher </button>
       </div>
     </div>
   </div>

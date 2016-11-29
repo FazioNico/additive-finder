@@ -32,6 +32,7 @@ export class SearchPage {
     });
   }
 
+  /* Events Methodes */
   ionViewDidLoad() {
     //console.log('Hello SearchPage Page');
   }
@@ -62,6 +63,7 @@ export class SearchPage {
     }
   }
 
+  /* Core Methodes */
   private _subscribe(){
     return this._addService.load()
       .subscribe((data)=>{

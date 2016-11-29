@@ -28,7 +28,7 @@ export class ListePage {
     private _addService: Additive
   ) {
     this._presentLoading()
-    this.loadData();
+    this._loadData();
   }
 
   /* Events Methode */
@@ -49,7 +49,7 @@ export class ListePage {
   }
 
   /* Core Methode */
-  loadData():void{
+  private _loadData():void{
     this._addService.load()
       .subscribe((data)=>{
         this._hideLoading()

@@ -29,9 +29,9 @@ export class AdditiveDetailPage {
     private _wiki: Wiki
   ) {
     if(this.navParams.get('additive')){
-        this._presentLoading()
         this.item = this.navParams.get('additive')
-        this.loadData()
+        this._presentLoading()
+        this._loadData()
     }
   }
 
@@ -41,16 +41,16 @@ export class AdditiveDetailPage {
   }
 
   /* Core Methodes */
-  loadData():void{
+  private _loadData():void{
     this._wiki.load(`e${this.item.id}`)
-      .map((el)=>{
+      .map((data)=>{
         if(
-          el.extract.search("faire référence :") > 0 ||
-          el.extract.search("peut désigner :") > 0
+          data.extract.search("faire référence :") > 0 ||
+          data.extract.search("peut désigner :") > 0
         ){
-          el.extract = 'Pas de détails supplémentaires.'
+          data.extract = 'Pas de détails supplémentaires.'
         }
-        return el
+        return data
       })
       .subscribe((data)=>{
         this.wikiData = data

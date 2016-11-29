@@ -5,7 +5,7 @@ export class LevelTools {
 
   }
 
-  static getColor(levelColor){
+  static getColor(levelColor:string):string{
     let classColor:string;
     switch (levelColor) {
       case '0':
@@ -25,7 +25,7 @@ export class LevelTools {
     return classColor;
   }
 
-  static getTXT(levelColor){
+  static getTXT(levelColor:string):string{
     let txt:string;
     switch (levelColor) {
       case '0':

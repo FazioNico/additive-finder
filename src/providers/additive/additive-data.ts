@@ -58,49 +58,49 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "124",
 		"name": "Ponceau 4R",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "127",
 		"name": "Erythrosine",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "128",
 		"name": "Rouge 2G/azogéranine",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "129",
 		"name": "Rouge allura AC",
-		"level": "0",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "131",
 		"name": "Bleu patenté V",
-		"level": "0",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "132",
 		"name": "Indigotine",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "133",
 		"name": "Bleu brillant FCF",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
@@ -114,35 +114,35 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "141",
 		"name": "Chlorophylles/Chlorophyllines",
-		"level": "3",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "142",
 		"name": "Vert acide brillant BS",
-		"level": "0",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "150",
 		"name": "Caramel ordinaire",
-		"level": "3",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "150c",
 		"name": "Caramel ammoniacal - ammonium",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "150d",
 		"name": "Caramel ammoniacal - ammonium",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
@@ -170,28 +170,70 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "155",
 		"name": "Brun chocolat HT",
-		"level": "0",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "160",
-		"name": "Carotènes mélangés de a à d",
+		"name": "Carotènes, caroténoïdes mélangés",
+		"level": "1",
+		"type": "colorants",
+		"info": ""
+	},
+	{
+		"id": "160b",
+		"name": "Roucou, Norbixine, Bixine",
+		"level": "1",
+		"type": "colorants",
+		"info": ""
+	},
+	{
+		"id": "160c",
+		"name": "Extrait de paprika",
 		"level": "0",
 		"type": "colorants",
 		"info": ""
+	},
+	{
+		"id": "160d",
+		"name": "Lycopène rouge",
+		"level": "1",
+		"type": "colorants",
+		"info": ""
+	},
+	{
+		"id": "161",
+		"name": "Xanthophylle jaune",
+		"level": "1",
+		"type": "colorants",
+		"info": "Interdit en Suisse"
+	},
+	{
+		"id": "161a",
+		"name": "Flaxoxanthine",
+		"level": "1",
+		"type": "colorants",
+		"info": "Interdit en Suisse"
 	},
 	{
 		"id": "161b",
 		"name": "Lutéine jaune/rouge",
-		"level": "0",
+		"level": "2",
 		"type": "colorants",
 		"info": ""
 	},
 	{
+		"id": "161c",
+		"name": "Cryptoxantthine",
+		"level": "2",
+		"type": "colorants",
+		"info": "Interdit en Suisse"
+	},
+	{
 		"id": "161g",
 		"name": "Canthaxanthine",
-		"level": "0",
+		"level": "3",
 		"type": "colorants",
 		"info": ""
 	},
@@ -219,244 +261,265 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "171",
 		"name": "Dioxyde de titane",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "172",
 		"name": "Oxyde et hydroxyde de fer",
-		"level": "3",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "173",
 		"name": "Aluminium",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "174",
 		"name": "Argent - argentum",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "175",
 		"name": "Or - aurum",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "180",
 		"name": "Litholrubine BK - pigment rubis - carmin 6B",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
 	{
 		"id": "200",
 		"name": "Acide sorbique",
-		"level": "0",
+		"level": "1",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "201",
 		"name": "Sorbates de sodium",
-		"level": "3",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "202",
 		"name": "Sorbates de potassium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "203",
 		"name": "Sorbates de calcium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "210",
 		"name": "Acide benzoïque",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "211",
 		"name": "Benzoates de sodium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "212",
 		"name": "Benzoates de potassium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "213",
 		"name": "Benzoates de calcium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "214",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "215",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "216",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "217",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "218",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "219",
 		"name": "Parahydroxybenzoate d'éthyle - propyle - méthyle et sels sodiques",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "220",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "221",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "222",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "223",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "224",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "225",
 		"name": "Anhydride sulfureux et sulfite",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "226",
 		"name": "Sulfite de calcium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "227",
 		"name": "Sulfite acide de calcium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "228",
 		"name": "Sulfite - acide de potassium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "230",
 		"name": "Biphényle - diphényle",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "231",
 		"name": "Orthophénylphénol",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "232",
 		"name": "Orthophénylphénate de sodium",
-		"level": "0",
+		"level": "2",
+		"type": "agents conservateurs",
+		"info": ""
+	},
+	{
+		"id": "233",
+		"name": "Thiabendazole",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "234",
 		"name": "Nisine",
-		"level": "0",
+		"level": "1",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "235",
 		"name": "Natamycine (pimaricin)",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "236",
 		"name": "Acide formique",
+		"level": "3",
+		"type": "agents conservateurs",
+		"info": ""
+	},
+	{
+		"id": "237",
+		"name": "Formiate de sodium",
+		"level": "3",
+		"type": "agents conservateurs",
+		"info": ""
+	},
+	{
+		"id": "237",
+		"name": "Formiate de calcium",
 		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
@@ -478,29 +541,36 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "249",
 		"name": "Nitrite de potassium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "250",
 		"name": "Nitrite de sodium (divers)",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "251",
 		"name": "Nitrate de sodium (divers)",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "252",
 		"name": "Nitrate de potassium",
-		"level": "0",
+		"level": "2",
 		"type": "agents conservateurs",
+		"info": ""
+	},
+	{
+		"id": "255",
+		"name": "Oxide de silicium",
+		"level": "1",
+		"type": "anti agglomerant",
 		"info": ""
 	},
 	{
@@ -513,70 +583,77 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "261",
 		"name": "Acétates de potassium",
-		"level": "3",
+		"level": "2",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "262",
 		"name": "Diacétates de sodium",
-		"level": "3",
+		"level": "1",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "263",
 		"name": "Acétates de calcium",
-		"level": "3",
+		"level": "2",
+		"type": "acides, bases, sels",
+		"info": ""
+	},
+	{
+		"id": "264",
+		"name": "Acétates d'ammonium",
+		"level": "2",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "270",
 		"name": "Acide lactique",
-		"level": "3",
+		"level": "2",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "280",
 		"name": "Acide propionique",
-		"level": "0",
+		"level": "1",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "281",
 		"name": "Propionates de sodium",
-		"level": "0",
+		"level": "1",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "282",
 		"name": "Propionates de calcium",
-		"level": "0",
+		"level": "1",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "283",
 		"name": "Propionates de potassium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "284",
 		"name": "Acide borique",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
 	{
 		"id": "285",
 		"name": "Tétraborate de sodium",
-		"level": "0",
+		"level": "3",
 		"type": "agents conservateurs",
 		"info": ""
 	},
@@ -660,21 +737,21 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "310",
 		"name": "Gallate de propyle",
-		"level": "0",
+		"level": "1",
 		"type": "antioxydants",
 		"info": ""
 	},
 	{
 		"id": "311",
 		"name": "Gallate d'octyle",
-		"level": "0",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
 	{
 		"id": "312",
 		"name": "Gallate de dodécyle",
-		"level": "0",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
@@ -695,14 +772,14 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "320",
 		"name": "Butylhydroxyanisol (BHA)",
-		"level": "0",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
 	{
 		"id": "321",
 		"name": "Butylhydroxytoluène (BHT)",
-		"level": "0",
+		"level": "1",
 		"type": "antioxydants",
 		"info": ""
 	},
@@ -711,7 +788,7 @@ export let AdditiveData:Array<any> = [
 		"name": "Lécithine",
 		"level": "3",
 		"type": "émulsifiants",
-		"info": ""
+		"info": "peut être un dérivé d'OGM"
 	},
 	{
 		"id": "325",
@@ -746,7 +823,7 @@ export let AdditiveData:Array<any> = [
 		"name": "Citrate de sodium",
 		"level": "3",
 		"type": "antioxydants",
-		"info": ""
+		"info": "peut être un dérivé d'OGM"
 	},
 	{
 		"id": "332",
@@ -767,26 +844,26 @@ export let AdditiveData:Array<any> = [
 		"name": "Acide tartrique",
 		"level": "3",
 		"type": "antioxydants",
-		"info": ""
+		"info": "peut être un dérivé d'OGM"
 	},
 	{
 		"id": "335",
 		"name": "Tartrate d'ammonium/sodium",
-		"level": "3",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
 	{
 		"id": "336",
 		"name": "Tartrate de potassium",
-		"level": "3",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
 	{
 		"id": "337",
 		"name": "Tartrate de potassium / calcium / sodium",
-		"level": "3",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
@@ -898,7 +975,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "385",
 		"name": "Ethylène-diamine-tétra-acétate de calcium disodium",
-		"level": "0",
+		"level": "3",
 		"type": "antioxydants",
 		"info": ""
 	},
@@ -961,28 +1038,28 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "410",
 		"name": "Farine de graines de caroubes",
-		"level": "0",
+		"level": "1",
 		"type": "épaississants",
 		"info": ""
 	},
 	{
 		"id": "412",
 		"name": "Gomme de guar",
-		"level": "0",
+		"level": "1",
 		"type": "épaississants",
 		"info": ""
 	},
 	{
 		"id": "413",
 		"name": "Gomme adragante",
-		"level": "0",
+		"level": "1",
 		"type": "épaississants",
 		"info": ""
 	},
 	{
 		"id": "414",
 		"name": "Gomme arabique",
-		"level": "0",
+		"level": "1",
 		"type": "épaississants",
 		"info": ""
 	},
@@ -1036,6 +1113,13 @@ export let AdditiveData:Array<any> = [
 		"info": ""
 	},
 	{
+		"id": "425",
+		"name": "Konjac",
+		"level": "3",
+		"type": "épaississants",
+		"info": ""
+	},
+	{
 		"id": "425k",
 		"name": "Konjac",
 		"level": "3",
@@ -1052,48 +1136,62 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "431",
 		"name": "Stéarate de polyoxyéthylène",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "432",
 		"name": "Monolaurate de polyoxyéthylène sorbitane",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "433",
 		"name": "Monooléate de polyoxyéthylène sorbitane",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "434",
 		"name": "Monopalmitate de polyoxyéthylène sorbitane",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "435",
 		"name": "Monostéarate de polyoxythylène sorbitane",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "436",
 		"name": "Tristéarate de polyoxyéthylène sorbitane",
-		"level": "0",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
 	{
 		"id": "440",
 		"name": "Pectines",
+		"level": "0",
+		"type": "épaississants",
+		"info": ""
+	},
+	{
+		"id": "440b",
+		"name": "Pectines amidée",
+		"level": "2",
+		"type": "épaississants",
+		"info": ""
+	},
+	{
+		"id": "441",
+		"name": "Gelatine",
 		"level": "3",
 		"type": "épaississants",
 		"info": ""
@@ -1101,7 +1199,14 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "442",
 		"name": "Sels d'ammonium / acides phosphatidiques",
-		"level": "0",
+		"level": "1",
+		"type": "émulsifiants",
+		"info": ""
+	},
+	{
+		"id": "443",
+		"name": "Huile végétale bromée",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
@@ -1117,7 +1222,7 @@ export let AdditiveData:Array<any> = [
 		"name": "Esters glycériques de résine de bois",
 		"level": "3",
 		"type": "émulsifiants",
-		"info": ""
+		"info": "origine animale ou OGM"
 	},
 	{
 		"id": "450",
@@ -1213,7 +1318,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "470",
 		"name": "Stéarates",
-		"level": "3",
+		"level": "2",
 		"type": "émulsifiants",
 		"info": ""
 	},
@@ -1241,8 +1346,8 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "474",
 		"name": "Saccharo-glycérides 3",
-		"level": "émulsifiants",
-		"type": "",
+		"level": "3",
+		"type": "émulsifiants",
 		"info": ""
 	},
 	{
@@ -1255,7 +1360,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "476",
 		"name": "Polyricinoléate de polyglycérol",
-		"level": "0",
+		"level": "1",
 		"type": "émulsifiants",
 		"info": ""
 	},
@@ -1395,7 +1500,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "512",
 		"name": "Chlorure d'étain",
-		"level": "0",
+		"level": "2",
 		"type": "antioxydants",
 		"info": ""
 	},
@@ -1436,77 +1541,77 @@ export let AdditiveData:Array<any> = [
 	},
 	{
 		"id": "520",
-		"name": "Sulfates d'aluminium - sodique - potassique et ammonique",
-		"level": "0",
+		"name": "Sulfates d'aluminium ",
+		"level": "1",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "521",
-		"name": "Sulfates d'aluminium - sodique - potassique et ammonique",
-		"level": "0",
+		"name": "Sulfates sodique ",
+		"level": "1",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "522",
-		"name": "Sulfates d'aluminium - sodique - potassique et ammonique",
-		"level": "0",
+		"name": "Sulfates d'aluminium potassique ",
+		"level": "1",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "523",
-		"name": "Sulfates d'aluminium - sodique - potassique et ammonique",
-		"level": "0",
+		"name": "Sulfates d'aluminium ammonique",
+		"level": "1",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "524",
-		"name": "Hydroxyde/sodium - potassium - calcium - ammonium - magnésium",
+		"name": "Hydroxyde de sodium ",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "525",
-		"name": "Hydroxyde/sodium - potassium - calcium - ammonium - magnésium",
+		"name": "Hydroxyde de potassium ",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "526",
-		"name": "Hydroxyde/sodium - potassium - calcium - ammonium - magnésium",
+		"name": "Hydroxyde de calcium",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "527",
-		"name": "Hydroxyde/sodium - potassium - calcium - ammonium - magnésium",
+		"name": "Hydroxyde d'ammonium",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "528",
-		"name": "Hydroxyde/sodium - potassium - calcium - ammonium - magnésium",
+		"name": "Hydroxyde de magnésium",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "529",
-		"name": "Oxyde de calcium - magnésium",
+		"name": "Oxyde de calcium",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
 	},
 	{
 		"id": "530",
-		"name": "Oxyde de calcium - magnésium",
+		"name": "Oxyde de magnésium",
 		"level": "3",
 		"type": "acides, bases, sels",
 		"info": ""
@@ -1520,21 +1625,21 @@ export let AdditiveData:Array<any> = [
 	},
 	{
 		"id": "536",
-		"name": "Ferrocyanure de sodium - potassium - calcium",
+		"name": "Ferrocyanure de sodium",
 		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "537",
-		"name": "Ferrocyanure de sodium - potassium - calcium",
+		"name": "Ferrocyanure de potassium",
 		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "538",
-		"name": "Ferrocyanure de sodium - potassium - calcium",
+		"name": "Ferrocyanure de calcium",
 		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
@@ -1542,7 +1647,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "541",
 		"name": "Phosphate d'aluminium sodique acide",
-		"level": "0",
+		"level": "3",
 		"type": "hosphates et polyphosphates",
 		"info": ""
 	},
@@ -1570,41 +1675,41 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "553b",
 		"name": "Talc",
-		"level": "0",
+		"level": "2",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "554",
 		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
-		"level": "0",
+		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "555",
 		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
-		"level": "0",
+		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "556",
 		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
-		"level": "0",
+		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "557",
 		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
-		"level": "0",
+		"level": "3",
 		"type": "antiagglomérants",
 		"info": ""
 	},
 	{
 		"id": "558",
-		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
+		"name": "Bentonite",
 		"level": "0",
 		"type": "antiagglomérants",
 		"info": ""
@@ -1612,7 +1717,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "559",
 		"name": "Silicate d'alumino-sodique - potassique - calcique et d'aluminium",
-		"level": "0",
+		"level": "2",
 		"type": "antiagglomérants",
 		"info": ""
 	},
@@ -1675,42 +1780,42 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "620",
 		"name": "Acide glutamique",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
 	{
 		"id": "621",
 		"name": "Sels de l'acide glutamique (glutamates)",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
 	{
 		"id": "622",
 		"name": "Sels de l'acide glutamique (glutamates)",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
 	{
 		"id": "623",
 		"name": "Sels de l'acide glutamique (glutamates)",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
 	{
 		"id": "624",
 		"name": "Sels de l'acide glutamique (glutamates)",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
 	{
 		"id": "625",
 		"name": "Sels de l'acide glutamique (glutamates)",
-		"level": "0",
+		"level": "2",
 		"type": " exhausteurs de saveur",
 		"info": ""
 	},
@@ -1794,7 +1899,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "900",
 		"name": "Diméthylpolysiloxane",
-		"level": "0",
+		"level": "3",
 		"type": "(divers)",
 		"info": ""
 	},
@@ -1822,21 +1927,21 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "904",
 		"name": "Shellac",
-		"level": "0",
+		"level": "1",
 		"type": "matières d'enrobage",
 		"info": ""
 	},
 	{
 		"id": "905",
 		"name": "Cire microcristalline",
-		"level": "0",
+		"level": "3",
 		"type": "matières d'enrobage",
 		"info": ""
 	},
 	{
 		"id": "912",
 		"name": "Esters de l'acide montanique",
-		"level": "0",
+		"level": "2",
 		"type": "matières d'enrobage",
 		"info": ""
 	},
@@ -1848,9 +1953,16 @@ export let AdditiveData:Array<any> = [
 		"info": ""
 	},
 	{
+		"id": "917",
+		"name": "Iodate de potassium",
+		"level": "3",
+		"type": "Oxidant",
+		"info": ""
+	},
+	{
 		"id": "920",
 		"name": "L-cystéine",
-		"level": "3",
+		"level": "2",
 		"type": "(divers)",
 		"info": ""
 	},
@@ -1906,14 +2018,14 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "951",
 		"name": "Aspartame",
-		"level": "0",
+		"level": "3",
 		"type": "édulcorants",
 		"info": ""
 	},
 	{
 		"id": "952",
 		"name": "Cyclamates",
-		"level": "0",
+		"level": "3",
 		"type": "édulcorants",
 		"info": ""
 	},
@@ -1927,7 +2039,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "954",
 		"name": "Saccharine",
-		"level": "0",
+		"level": "3",
 		"type": "édulcorants",
 		"info": ""
 	},
@@ -1941,6 +2053,27 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "959",
 		"name": "Neohespéridine DC",
+		"level": "3",
+		"type": " exhausteurs de saveur",
+		"info": ""
+	},
+	{
+		"id": "960",
+		"name": "Glycosides de stéviole",
+		"level": "1",
+		"type": " exhausteurs de saveur",
+		"info": ""
+	},
+	{
+		"id": "961",
+		"name": "Néotame",
+		"level": "3",
+		"type": " exhausteurs de saveur",
+		"info": ""
+	},
+	{
+		"id": "962",
+		"name": "Sel d'aspartame",
 		"level": "3",
 		"type": " exhausteurs de saveur",
 		"info": ""
@@ -1962,7 +2095,14 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "999",
 		"name": "Extraits de quillaia",
-		"level": "0",
+		"level": "1",
+		"type": "(divers)",
+		"info": ""
+	},
+	{
+		"id": "1100",
+		"name": "Amylase",
+		"level": "1",
 		"type": "(divers)",
 		"info": ""
 	},
@@ -1976,7 +2116,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "1105",
 		"name": "Lysozyme",
-		"level": "0",
+		"level": "1",
 		"type": "colorants",
 		"info": ""
 	},
@@ -1990,7 +2130,7 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "1201",
 		"name": "Polyvinylpyrrolidone",
-		"level": "0",
+		"level": "2",
 		"type": "(divers)",
 		"info": ""
 	},
@@ -2074,6 +2214,13 @@ export let AdditiveData:Array<any> = [
 	{
 		"id": "1451",
 		"name": "Amidon oxydé acétylé",
+		"level": "3",
+		"type": "amidons modifiés",
+		"info": ""
+	},
+	{
+		"id": "1452",
+		"name": "Succinate octénylique aluminique d'amidon",
 		"level": "3",
 		"type": "amidons modifiés",
 		"info": ""

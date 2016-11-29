@@ -43,6 +43,15 @@ export class AdditiveDetailPage {
   /* Core Methodes */
   loadData():void{
     this._wiki.load(`e${this.item.id}`)
+      .map((el)=>{
+        if(
+          el.extract.search("faire référence :") > 0 ||
+          el.extract.search("peut désigner :") > 0
+        ){
+          el.extract = 'Pas de détails supplémentaires.'
+        }
+        return el
+      })
       .subscribe((data)=>{
         this.wikiData = data
         this._hideLoading()

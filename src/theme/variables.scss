@@ -103,3 +103,8 @@ ion-content{
 .card-md {
   background: #e0e0e0!important;
 }
+.md .modal-wrapper>.ion-page>ion-header>.toolbar.statusbar-padding:first-child {
+  padding-top: 0px!important;
+  height: 56px!important;
+  min-height: 56px!important;
+}

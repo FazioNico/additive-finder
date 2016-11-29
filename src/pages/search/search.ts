@@ -69,7 +69,7 @@ export class SearchPage {
     let alert = this.alertCtrl.create({
       title: 'Inconnu',
       subTitle: `
-        Cet additif n'est pas ensore répértorié dans la base de donnée.
+        Cet additif n'est pas encore répértorié dans la base de donnée.
       `,
       buttons: ['OK']
     });

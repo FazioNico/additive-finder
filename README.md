@@ -30,7 +30,7 @@ Do not hesitate to note and make known this application around you.
 
 ### Build tools
 * [Angular 2](https://angular.io/) - TypeScript Mobile & desktop framework.
-* [Ionic 2](http://ionicframework.com/) Open source framework for building amazing mobile multi-platform apps.
+* [Ionic 2](http://ionicframework.com/) - Open source framework for building amazing mobile multi-platform apps.
 
 ### API
 * [Wikipedia REST API](https://www.mediawiki.org/wiki/API:Main_page/fr) -  Web service that provides convenient access to wiki features, data, and meta-data over HTTP.
